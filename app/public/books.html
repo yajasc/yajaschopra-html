@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<html lang="en">
+ 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!--Top Header-->
+<a href="index.html">About me</a>
+<a href="books.html">|  Books</a>
+<a href="basketball.html">|       Basketball</a>
+<script src="https://unpkg.com/vue@next">
+</script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+      <title class = "bbbb">Books</title>
+  
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <div id = 'offerApp'>
+    <h1>Books</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>author</th>
+          <th>book</th>
+          <th>publisher</th>
+        </tr>
+      </thead>
+        <tbody>
+            <tr v-for="x in students">
+                <td>{{ x.id }}</td>
+                <td>{{ x.author }}</td>
+                <td>{{ x.book }}</td>
+                <td>{{ x.publisher }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class = "header">
+      <h1 class = "bbbb">Add Form Book</h1>
+      </div>
+    <form v-on:submit.prevent="postNewOffer">
+      <label for = "title">Author</label>
+      <input type="text" v-model="offerForm.author" name = "title" id = "title" class = "title"> <br>
+      </class>
+       <label for = "title">Book</label>
+      <input type="text" v-model="offerForm.book" name = "firstname" id = "firstname" class = "name"><br>
+  <label for = "lastname">Publisher<input type="text" v-model="offerForm.publisher" name = "firstname" id = "firstname" class = "name"><br>
+   <input type="Submit" value="submit">
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+  </form>
+  </div>
+  <main>
+    
+
+    <script src="JS/whatever.js"></script>
+    <script src="JS/tablesort.min.js"></script>
+    <script>
+      new Tablesort(document.getElementById('taskTable'));
+    </script>
+  </body>
+
+</html>

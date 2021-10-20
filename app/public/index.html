@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<html lang="en">
+  <script src="https://unpkg.com/vue@next">
+  </script>
+
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!--Top Header-->
+<div class = "b">
+<a href="index.html">About me</a>
+<a href="books.html">|  Books</a>
+<a href="basketball.html">|       Basketball</a>
+</div>
+<div id="someApp">
+<h1><p class="text-warning bg-dark text-center">About me</h1>
+</p>
+  </head>
+></a>
+<br>
+<a target="_blank" v-bind:href='result.picture.large'>
+  <img v-bind:src="result.picture.large" class="img-thumbnail imgborder">
+  <!--https://www.google.com/url?sa=i&url=https%3A%2F%2Ftimesofindia.indiatimes.com%2Flife-style%2Frelationships%2Fweb-stories%2Ftraits-of-a-high-quality-man%2Fphotostory%2F83890812.cms&psig=AOvVaw0YRnH_oXvTbgAi_h1CyljU&ust=1630791177141000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjf_9jg4_ICFQAAAAAdAAAAABAD-->
+  </a>
+<h3>
+  Name:</h3> {{result.name.title}} {{result.name.first}} {{result.name.last}}
+<br> 
+<H3>Country of origin:</H3> {{result.location.country}}
+<br>
+<H3>Age:</H3> {{result.dob.age}}
+<h3>Birthday:</H3> {{prettyBirthday}} 
+<H3>Email Address: </H3><a v-bind:href="'mailto:' + result.email">{{ result.email }}</a></p>
+<form v-on:submit.prevent="fetchUserData">
+  <button class="btn btn-primary" type="submit">Refresh</button>
+</form>
+<br>
+  <body>
+    <script src="JS/random.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+</div>
+  </body>
+</html>
