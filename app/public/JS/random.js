@@ -43,7 +43,7 @@ const SomeApp = {
           .then( json => {
             console.log("Returned from post:", json);
             // TODO: test a result was returned!
-            this.book = json;
+            this.books = json;
             
             // reset the form
             this.bookForm = {};
@@ -53,7 +53,6 @@ const SomeApp = {
     created() {
         this.fetchUserData();
     }
-
   }
   
   Vue.createApp(SomeApp).mount('#someApp');
